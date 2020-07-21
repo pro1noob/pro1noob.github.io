@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head title{
+    display: none;
+}
+
+header img{
+    display: block;
+}
+
+body{
+    background-color: #f0eee4;
+    min-height: 100vh;
+}
+
+/*  */
+/*  */
+
+/* DECORATION ONLY - START*/
+
+
+
+/* Fonts in index.html */
+
+.TextOnImage{
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.Navigation-bar, a{
+    font-family: 'Red Rose', cursive; 
+}
+
+.Right h5{
+    font-family: 'Red Rose', cursive;
+}
+
+.Right section{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer a {
+    font-family: 'Red Rose', cursive;
+}
+
+.footer-down p{
+    font-family: 'Red Rose', cursive;
+}
+
+.footer-up p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-up h5{
+    font-family: 'Red Rose', cursive;
+}
+
+.LeftRight img{
+    width: 100%;
+}
+
+
+/* Font Size */
+
+
+
+
+
+/* Font Color */
+
+/* Header Text  */
+
+.TextOnImage{
+    color: rgb(243, 199, 1);
+}
+
+/* Right Side Link */
+
+.Right a{
+    color: #353535;
+}
+
+.Right a:hover{
+    color: tomato;
+}
+
+.Right h5{
+    color: #353535;
+}
+
+.Right h5:hover{
+    color: tomato;
+}
+
+.Right section{
+    color: #353535;
+}
+
+/* Right Side Image hover effect */
+
+.Right {
+    overflow: hidden;
+}
+
+.Right a img{
+    transition: transform .5s ease;
+    
+}
+
+.Right a img:hover {
+    transform: scale(1.009);
+}
+
+/* Left Side Link */
+
+
+.RecentPosts, .FollowUs{
+    color: #353535;
+}
+
+.RecentPosts a{
+    color: #353535;
+}
+
+.RecentPosts a:hover{
+    color: tomato;
+}
+
+/* Footer Link */
+
+.footer-down-right a{
+    color: thistle;
+}
+
+.footer-down-right a:hover{
+    color: tomato;
+}
+
+
+
+
+/* Page Navigation */
+
+.PageNav a{
+    padding: 8px 16px;
+    color: black;
+}
+
+.PageNav a:hover{
+    color: white;
+}
+
+.PageNav a.active {
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+.PageNav a:hover:not(.active) {
+    background-color:tomato;
+    border-radius: 5px;
+    }   
+
+
+
+
+
+/* Navigation Bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    background-color:#353535;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: tomato;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+  }
+
+
+
+
+
+/* Subscribe to AnimeLife */
+
+.subscribe{
+    background-color: #353535;
+    color: tomato;
+}
+
+.container{
+    background-color: yellowgreen;
+}
+
+input[type=submit] {
+    background-color: tomato;
+    color: white;
+    border: none;
+    transition: transform .5s ease;
+  }
+
+  input[type=submit]:hover {
+    opacity: 0.9;
+    transform: scale(1.009);
+  }
+
+
+
+
+/* Social Media Buttons */
+
+.fa{
+    padding: 10px;
+    font-size: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+
+
+/* Footer */
+
+.footer{
+    background-color: #353535;
+    color: tomato;
+}
+
+.footer-up img{
+    height: 10%;
+    width: 10%;
+}
+
+
+/* Placing header text on banner and fixing banner image */
+
+header img{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    opacity: 0.8;
+}
+
+.TextOnImage{
+    z-index: 100;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5em;
+} 
+
+
+
+
+/* DECORATION ONLY - STOP*/
+
+/*  */
+/*  */
+
+/* PADDING */
+
+.Navigation-bar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Right{
+    padding: 30px;
+}
+
+.Left{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.Right h5, section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Subscribe AnimeLife */
+
+.subscribe{
+    padding: 10px;
+    height: 150px;
+    padding: 15px;
+}
+
+.subscribe h2{ 
+   padding-bottom: 10px; 
+}
+
+.subscribe p{
+   padding-bottom: 10px; 
+}
+
+/* Hides Recent Posts */
+
+.RecentPosts{ 
+    display: none;
+}
+
+/* Follow Us */
+
+.FollowUs{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.FollowUs h3{
+    padding-bottom: 10px;
+}
+
+/* Footer image */
+
+.footer-up img{
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    float: left;
+}
+
+/* footer up text */
+
+.footer-up p, h5{
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 0.859em;
+}
+
+.footer-up h5{
+    padding: 10px;
+}
+
+/* footer down text */
+
+.footer-down-left{
+    padding: 10px;
+}
+
+/* Hides footer down right text */
+
+.footer-down-right{
+    display: none;
+}
+
+/* ipad version */
+
+
+@media only screen and (min-width: 768px){
+    
+    /* header */
+
+    header img{
+        height: 250px;
+    }
+    
+    .TextOnImage{
+        font-size:1em ;
+    }
+
+    /* Navigation Bar */
+
+    li a{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    /* Padding */
+
+    .Right{
+        padding: 50px;
+    }
+    
+    .Left{
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .FollowUs{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .Right h5, section{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    /* Font size of the body */
+
+    .Right a, section{
+        font-size: 1.6em;
+    }
+
+
+    .Right h5{
+        font-size: 1em;
+    }
+
+
+
+    /* Subscribe AnimeLife */
+
+    .subscribe{
+        padding: 25px;
+        height: 200px;
+    }
+    
+    .subscribe h2{ 
+        padding-bottom: 20px; 
+        font-size: 1.5em;
+    }
+     
+     .subscribe p{
+        padding-bottom: 15px; 
+        font-size: 1.2em;
+    }
+    
+    input[type=submit] {
+        height: 40px;
+        width: 90px;
+        font-size: 1.1em;
+    }
+
+    input[type=text]{
+        height: 40px;
+        width: 400px;
+        font-size: 1em;
+    }
+
+    /* Follow Us */
+
+    .FollowUs{
+        padding-bottom: 20px;
+    }
+    
+    .FollowUs h3{
+        padding-bottom: 10px;
+        font-size: 2em;
+    }
+
+    .FollowUs a{
+        height: 50px;
+        width: 50px;
+    }
+
+
+    /* footer */
+
+    .footer-up p, h5{
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        font-size: 1.2em;
+    }
+    
+    .footer-up h5{
+        padding: 10px;
+        padding-left: 150px;
+    }
+    
+    /* footer down text */
+    
+    .footer-down-left{
+        display: block;
+    }
+    
+    /* Hides footer down right text */
+    
+    .footer-down{
+        display: flex;
+    }
+
+    .footer-up img{
+        height: 150px;
+        width: 150px;
+        padding: 20px;
+    
+
+
+}
+
+
+
+/* ipad pro version */
+
+@media only screen and (min-width: 1024px){
+    
+    /* header */
+
+    header img{
+        height: 300px;
+    }
+    
+    .TextOnImage{
+        font-size:1.2em ;
+    }
+
+    /* Navigation Bar */
+
+    li a{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    /* Padding */
+
+    .Right{
+        padding: 80px;
+    }
+    
+    .Left{
+        padding-right: 80px;
+        padding-left: 80px;
+        padding-bottom: 80px;
+    }
+
+    .FollowUs{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    
+    .Right h5, section{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    /* Font size of the body */
+
+    .Right a, section{
+        font-size: 2em;
+    }
+
+
+    .Right h5{
+        font-size: 1em;
+    }
+
+
+
+    /* Subscribe AnimeLife */
+
+    .subscribe{
+        padding: 35px;
+        height: 300px;
+    }
+    
+    .subscribe h2{ 
+        padding-bottom: 30px; 
+        font-size: 2em;
+    }
+     
+    .subscribe p{
+        padding-bottom: 15px; 
+        font-size: 1.5em;
+    }
+    
+    input[type=submit] {
+        height: 60px;
+        width: 120px;
+        font-size: 1.5em;
+    }
+
+    input[type=text]{
+        height: 60px;
+        width: 550px;
+        font-size: 1.2em;
+    }
+
+    /* Follow Us */
+
+    .FollowUs{
+        padding-bottom: 30px;
+    }
+    
+    .FollowUs h3{
+        padding-bottom: 20px;
+        font-size: 2.5em;
+    }
+
+    .FollowUs a{
+        height: 50px;
+        width: 50px;
+    }
+
+
+    /* footer */
+
+    .footer-up p, h5{
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        font-size: 1.3em;
+    }
+    
+    .footer-up h5{
+        padding: 10px;
+        padding-left: 120px;
+        font-size: 1em;
+    }
+    
+    /* footer down text */
+    
+    .footer-down-left{
+        display: block;
+    }
+    
+    /* Hides footer down right text */
+    
+    .footer-down{
+        display: flex;
+        font-size: 1.4em;
+    }
+}  
+
+}
+
+/* Desktop version */
+
+@media only screen and (min-width: 1200px){
+
+    /* banner image */
+
+    header img{
+        height: 150px;
+        display: block;
+    }
+    
+    .TextOnImage{
+        font-size:0.9em ;
+    }
+
+    /* Navigation Bar */
+
+    .Navigation-bar{
+        padding-top: 0;
+    }
+
+    li a{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .home{
+        margin-left: 120px;
+    }
+
+    .contact{
+        margin-right: 100px;
+    }
+
+    /* Show Recent Posts */
+
+    .RecentPosts{
+        display: block;
+    }
+
+
+    /* Padding */
+
+    .Right{
+        padding: 50px;
+    }
+    
+    .Left{
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .FollowUs{
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 30%;
+    }
+
+    .RecentPosts{
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 30%;
+    }
+    
+    .Right h5, section{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    /* Making the layout */
+
+    .Right{
+        width: 70%;
+        float: left;
+    }
+
+    .Left, .RecentPosts, .FollowUs{
+        width: 30%;
+        float: left;
+        padding: 0;
+    }
+
+    header, footer{
+        text-align: center;
+    }
+
+    /* Left Side Layout */
+
+    .Right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .Right div{
+        padding-right: 40px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .Right img{
+        height: 300px;
+        width: 400px;
+        object-fit: cover;
+    } 
+
+    .Right a{
+        word-wrap: break-word;
+    }
+
+    /* Right Side Layout */
+
+    .Left, .RecentPosts{
+        padding-top:50px;
+        padding-right: 50px;
+    }
+
+    /* Font size */
+
+    .Right a, section{
+        font-size: 1.1em;
+    }
+
+
+    .Right h5{
+        font-size: 1em;
+    }
+
+    /* Left Side */
+
+    /* Subscribe Us */
+
+    .subscribe{
+        font-size: 0.8em;
+        padding: 30px;
+    }
+
+    .subscribe h2{
+        padding-bottom: 10px;
+    }
+
+    .subscribe p{
+        font-size: 1.4em;
+        padding-top: 0;
+    }
+    
+    input[type=submit] {
+        height: 50px;
+        width: 120px;
+        font-size: 1.5em;
+    }
+
+    input[type=text]{
+        height: 50px;
+        width: 280px;
+        font-size: 1.2em;
+        padding-left: 15px;
+    }
+
+    /* Recent Posts */
+
+    .RecentPosts h3{
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+
+    .RecentPosts p{
+        padding-bottom: 8px;
+    }
+
+    /* Follow Us */
+
+    
+
+    .FollowUs{
+        font-size: 0.6em;
+        padding-top: 30px;
+    }
+
+    .FollowUs a{
+        padding-top: 18px;
+        font-size: 1.5em;
+    }
+
+    /* Footer */
+
+    
+
+    .footer{
+        height: 200px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: 3200px;
+    }
+
+    .footer img{
+        margin-left: 20px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .footer-up p,h5 {
+        font-size: 1em;
+        word-spacing: 5px;
+    }
+
+
+    .footer-down-left{
+        font-size: 0.8em;
+        float: left;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+
+    .footer-down-right{
+        display: block;
+        font-size: 0.8em;
+        text-align: left;
+        padding: 10px;
+        margin-left: 200px;
+    }
+
+    .footer-down-right a{
+        padding-left: 30px;
+    }
+
+    /* Sub-Page */
+
+    .sub-page{
+        width: 200%;
+        font-size: 1.5em;
+        color: #353535;
+    }
+
+    .sub-page h1{
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+
+    .sub-page img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        height: 350px;
+        width: 350px;
+    }
+
+    .sub-page p{
+        padding-left: 20px;
+    }
+
+
+}
+
